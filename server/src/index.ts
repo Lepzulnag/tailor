@@ -1,5 +1,5 @@
 
-import { Node, Text, Mark, Block } from "./Node"
+import { Node, Text, Mark, Block } from "../../nodes/src"
 import http from 'http'
 import socketIo from 'socket.io'
 import polka from 'polka'

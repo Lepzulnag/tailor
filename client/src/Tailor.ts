@@ -1,7 +1,7 @@
 
 import Rich from "./Rich"
 
-export { Node, Text, Mark, Block } from "./Node"
+export { Node, Text, Mark, Block } from "../../nodes/src"
 
 
 export class Tailor {
