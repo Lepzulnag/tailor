@@ -1,7 +1,10 @@
 
 import Rich from "./Rich"
 
-export default class Tailor {
+export { Node, Text, Mark, Block } from "./Node"
+
+
+export class Tailor {
 	container: HTMLElement
 
 	constructor(container: HTMLElement) {
