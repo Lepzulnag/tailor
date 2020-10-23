@@ -1,6 +1,0 @@
-{
-	"name": "@tailor/nodes",
-	"version": "1.0.0",
-	"description": "A sophisticated base for a rich text editor.",
-	"main": "src/index.js"
-}

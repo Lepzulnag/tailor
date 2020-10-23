@@ -2,7 +2,8 @@
 
 <script lang="ts">
 	import { onMount } from 'svelte'
-	import Tailor from './Tailor'
+	import { Tailor } from '../src/Tailor'
+
 	export let editor: HTMLDivElement = null
 	export let tailor: Tailor
 
@@ -17,7 +18,6 @@
 	class="tailor"
 	contenteditable
 />
-
 
 
 <style lang="stylus">

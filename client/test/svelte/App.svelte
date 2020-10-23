@@ -1,5 +1,5 @@
-<script lang="ts">
-	import Tailor from './Tailor.svelte'
+<script>
+	
 </script>
 
 

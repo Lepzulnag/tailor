@@ -1,0 +1,5 @@
+{
+	"watch": ["src", "../nodes"],
+	"ext": "ts",
+	"exec": "tsc src/Tailor.ts"
+}

@@ -1,5 +1,5 @@
 
-
+export type NodeRef = Array<number>
 
 export class Node {
 }
@@ -25,7 +25,7 @@ export class Mark extends Tag {
 	static possibleChildren = [Mark, Text]
 }
 
-export class Block extends Node {
+export class Block extends Tag {
 	static possibleChildren = [Node]
 }
 
