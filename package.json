@@ -4,10 +4,9 @@
 	"description": "A sophisticated base for a rich text editor.",
 	"main": "index.js",
 	"scripts": {
-		"dev": "nodemon server/src/server.ts & live-server client/test",
-		"dev-server": "nodemon server/src/server.ts",
-		"dev-client": "live-server client/test",
-		"build": "tsc src/server.ts"
+		"dev": "concurrently npm:server npm:client -c magenta.bold,blue.bold",
+		"server": "nodemon --watch server --watch shared --ext ts --exec \"ts-node server/server.ts\"",
+		"client": "npm run dev --prefix client"
 	},
 	"repository": {
 		"type": "git",
@@ -20,22 +19,11 @@
 	},
 	"homepage": "https://github.com/Lepzulnag/tailor#readme",
 	"devDependencies": {
-		"@tsconfig/svelte": "^1.0.10",
-		"live-server": "^1.2.1",
-		"nodemon": "^2.0.6",
-		"stylus": "^0.54.8",
-		"svelte": "3.29.0",
-		"svelte-check": "^1.0.56",
-		"svelte-hmr": "0.11.1",
-		"svelte-preprocess": "4.3.2",
-		"svite": "^0.7.2",
-		"ts-node": "^9.0.0",
-		"tslib": "^2.0.3",
-		"typescript": "^4.0.3"
+		"concurrently": "^5.3.0"
 	},
 	"dependencies": {
 		"@types/node": "^14.14.2",
-		"polka": "^0.5.2",
+		"@types/socket.io": "^2.1.11",
 		"socket.io": "^2.3.0"
 	}
 }

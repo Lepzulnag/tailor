@@ -1,11 +1,11 @@
 {
-  "name": "client-vite",
-  "version": "0.0.0",
   "scripts": {
     "dev": "vite",
     "build": "vite build"
   },
-  "dependencies": {},
+  "dependencies": {
+    "@types/socket.io-client": "^1.4.34"
+  },
   "devDependencies": {
     "vite": "^1.0.0-rc.8"
   }

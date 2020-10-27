@@ -1,9 +1,8 @@
 
-import * as http from 'http'
 import * as createServer from 'socket.io'
 
-import { Node, Text, Mark, Block } from "../../shared/nodes"
-import Message from "../../shared/Message"
+import { Node, Text, Mark, Block } from "../shared/nodes"
+import Message from "../shared/Message"
 
 
 const IO_PORT = 3001
