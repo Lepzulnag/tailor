@@ -38,7 +38,6 @@ export class Caret {
 		this.elementId = elementId
 	}
 
-
 	get element() {
 		if (!this._element)
 			this._element = document.getElementById(this.elementId)

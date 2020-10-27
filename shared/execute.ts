@@ -1,25 +1,8 @@
-
-import {
-	NodeRef,
-	Node,
-	Text,
-	Mark,
-	Tag,
-	Block,
-} from './nodes'
-
-export enum Operation {
-	insertText,
-	insertBlock,
-	setMark,
-	unsetMark,
-	setBlock,
-	deleteRange,
-	deleteBlock,
-	replaceRangeByText,
-	insertRichText, // should we? Or should we split it into pieces of other operations?
-	replaceRangeByRichText,  // same question
-}
+/**
+ * Describes the functions used to execute an operation
+ */
+import { NodeRef, Node, Text, Mark, Tag, Block } from './nodes'
+import Operation from "./Operation"
 
 export function executeOperation(op: Operation, ...args: any) {
 	return execute[op](...args)
