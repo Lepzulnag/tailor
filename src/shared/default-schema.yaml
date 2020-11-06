@@ -1,0 +1,28 @@
+p:
+	extends: block
+	followedBy: p
+
+ul:
+	extends: block
+
+li:
+	extends: block
+	followedBy: li
+
+table:
+	extends: block
+
+tr:
+	extends: block
+
+th:
+	extends: tr
+
+td:
+	extends: block
+	noFollow: true
+
+a:
+	extends: mark
+	attributes:
+		href: string

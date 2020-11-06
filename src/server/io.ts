@@ -1,4 +1,6 @@
-
+/**
+ * Methods to connect to an IO server
+ */
 import '@types/socket.io-client/index.d'
 
 let socket = io.connect('http://localhost:3001')

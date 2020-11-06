@@ -1,5 +1,0 @@
-{
-	"watch": [".", "../shared"],
-	"ext": "ts",
-	"exec": "ts-node server.ts"
-}

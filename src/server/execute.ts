@@ -1,8 +1,8 @@
 /**
  * Describes the functions used to execute an operation
  */
-import { NodeRef, Node, Text, Mark, Tag, Block } from './nodes'
-import Operation from "./Operation"
+import { NodeRef, Node, Text, Mark, Tag, Block } from '../shared/nodes'
+import Operation from "../shared/Operation"
 
 export function executeOperation(op: Operation, ...args: any) {
 	return execute[op](...args)

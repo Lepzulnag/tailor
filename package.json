@@ -6,7 +6,7 @@
 	"scripts": {
 		"dev": "concurrently npm:server npm:client -c magenta.bold,blue.bold",
 		"server": "nodemon --watch server --watch shared --ext ts --exec \"ts-node server/server.ts\"",
-		"client": "npm run dev --prefix client"
+		"client": "vite"
 	},
 	"repository": {
 		"type": "git",
@@ -19,11 +19,12 @@
 	},
 	"homepage": "https://github.com/Lepzulnag/tailor#readme",
 	"devDependencies": {
+		"vite": "^1.0.0-rc.8",
 		"concurrently": "^5.3.0"
 	},
 	"dependencies": {
 		"@types/node": "^14.14.2",
 		"@types/socket.io": "^2.1.11",
-		"socket.io": "^2.3.0"
+		"@types/socket.io-client": "^1.4.34"
 	}
 }
